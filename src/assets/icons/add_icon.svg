@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Group">
+    <path d="M0 17.5C0 7.83502 7.83502 0 17.5 0C27.165 0 35 7.83502 35 17.5C35 27.165 27.165 35 17.5 35C7.83502 35 0 27.165 0 17.5Z" id="Ellipse" fill="#59ADFF" fill-rule="evenodd" stroke="none" />
+    <g id="+" fill="#FFFFFF" transform="translate(4.5 4.5)">
+      <path d="M18.9355 12.2031L18.9355 14.4414L14.1191 14.4414L14.1191 19.4219L11.8926 19.4219L11.8926 14.4414L7.07617 14.4414L7.07617 12.2031L11.8926 12.2031L11.8926 7.21094L14.1191 7.21094L14.1191 12.2031L18.9355 12.2031Z" />
+    </g>
+  </g>
+</svg>
