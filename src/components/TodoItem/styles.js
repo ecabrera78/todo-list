@@ -67,6 +67,9 @@ export const TodoLabel = styled.label.attrs(props => ({
 `;
 
 export const RemoveIcon = styled.span`
+	@media screen and (min-width: 768px) {
+		left: 93%;
+	}
 	display: inline-block;
 	width: 20px;
 	height: 20px;

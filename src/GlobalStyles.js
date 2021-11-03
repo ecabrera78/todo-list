@@ -5,7 +5,12 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
+    min-height: 100%;
     min-width: 320px;
     margin: 0;
     background: #1B2127;

@@ -5,6 +5,7 @@ const TodoContext = React.createContext();
 
 const TodoProvider = props => {
 	const { todos, setTodos } = useTodos();
+	const [isVisible, setIsVisible] = useState(false);
 
 	let filteredTodos = [];
 	let totalTodos = todos.length;
@@ -44,6 +45,8 @@ const TodoProvider = props => {
 				deleteTodo,
 				searchText,
 				setSearchText,
+				isVisible,
+				setIsVisible,
 			}}
 		>
 			{props.children}

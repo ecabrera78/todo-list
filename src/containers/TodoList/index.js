@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { TodoCounter } from '../../components/TodoCounter';
 import { TodoItem } from '../../components/TodoItem';
 import { TodoContext } from '../../context/TodosProvider';
-import { TodoListContainer } from './styles';
+import { TodoListContainer, AddTodo } from './styles';
 
 export const TodoList = () => {
 	const {
@@ -11,6 +11,8 @@ export const TodoList = () => {
 		totalTodos,
 		completeTodo,
 		deleteTodo,
+		isVisible,
+		setIsVisible,
 	} = useContext(TodoContext);
 
 	const onChangeHandler = e => {
@@ -19,6 +21,10 @@ export const TodoList = () => {
 
 	const deleteTodoHandler = id => {
 		deleteTodo(id);
+	};
+
+	const openModalHandler = () => {
+		setIsVisible(!isVisible);
 	};
 
 	return (
@@ -35,6 +41,7 @@ export const TodoList = () => {
 					</li>
 				))}
 			</ul>
+			<AddTodo onClick={openModalHandler}></AddTodo>
 		</TodoListContainer>
 	);
 };
